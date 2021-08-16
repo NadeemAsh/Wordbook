@@ -69,7 +69,7 @@ body {
 @media (max-width: 768px) {
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .fancy {
     width: 120px;
   }

@@ -2,7 +2,7 @@
     border: 1px solid var(--main);
     padding: 12px;
     border-radius: 6px;
-    height: 100%;
+    height: 70vh;
     margin: 25px 0;
   }
   
@@ -42,4 +42,10 @@
   .details{
       font-weight: 500;
       padding: 15px;
+  }
+
+  @media (max-width: 1024px) {
+    .result-card{
+        height: 100%;
+    }
   }
