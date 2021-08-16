@@ -1,0 +1,90 @@
+:root {
+  --main: #16222a;
+  --secondary: #3a6073;
+  --lightGrey: #e1e1e1;
+  --paleGrey: #bbbbbb;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-container {
+  width: 100%;
+  height: calc(100vh - 135px);
+  background-color: #fff;
+  color: var(--main);
+  border-radius: 12px 12px 0 0;
+  padding: 20px;
+}
+
+.fancy {
+  background-color: var(--secondary);
+  width: 180px;
+  height: 8px;
+  border: none;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  border-radius: 12px;
+  border: none;
+  margin: 20px 0;
+}
+
+.result-card {
+  border: 1px solid var(--main);
+  padding: 12px;
+  border-radius: 6px;
+  height: fit-content;
+}
+
+.result{
+  color: var(--main);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.phonetics {
+  background-color: var(--lightGrey);
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.synonyms-wrapper h6{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 420px) {
+  .fancy {
+    width: 120px;
+  }
+
+  .result{
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
