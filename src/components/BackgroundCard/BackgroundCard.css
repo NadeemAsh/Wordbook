@@ -48,31 +48,9 @@ body {
   margin: 20px 0;
 }
 
-.result-card {
-  border: 1px solid var(--main);
-  padding: 12px;
-  border-radius: 6px;
-  height: fit-content;
-}
 
-.result{
-  color: var(--main);
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.phonetics {
-  background-color: var(--lightGrey);
-  padding: 5px;
-  border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.synonyms-wrapper h6{
-  font-size: 18px;
-  font-weight: 500;
-  margin: 5px 0;
-  text-decoration: none;
+.no-res{
+  text-align: center;
 }
 
 @media (max-width: 768px) {

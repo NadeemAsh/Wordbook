@@ -1,0 +1,39 @@
+.result-card {
+    border: 1px solid var(--main);
+    padding: 12px;
+    border-radius: 6px;
+    height: fit-content;
+  }
+  
+  .result{
+    color: var(--main);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .phonetics-icon {
+    background-color: var(--lightGrey);
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .phonetics-text{
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: 500;
+  }
+  
+  .synonyms-wrapper h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+    text-decoration: none;
+  }
+  
+  .carousel-text{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 38px;
+    margin: 3px 0;
+    text-align: center;
+  }

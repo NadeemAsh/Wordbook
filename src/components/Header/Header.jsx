@@ -7,7 +7,7 @@ const Header = () => {
     <div className="heading">
       <Typewriter
         onInit={(text)=>{
-          text.typeString('Dictionary').start();
+          text.typeString('Wordbook..').start();
         }}
       />
     </div>
