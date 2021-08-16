@@ -74,12 +74,13 @@ const BackgroundCard = () => {
       const data = await axios
         .get("https://api.dictionaryapi.dev/api/v2/entries/en/" + textValue)
         .then((res) => {
+          console.log(res.statusText);
           setData(res.data[0]);
           setSynonyms(res.data[0].meanings[0].definitions[0].synonyms);
         });
-        setLoader(true);
+      setLoader(true);
     } catch (error) {
-      console.log("Error- ", error);
+      alert('Error 404 Not Found');
     }
   };
 
@@ -107,8 +108,11 @@ const BackgroundCard = () => {
         </StyledButton>
         <hr className="divider" />
         {data === null ? (
-          <h3 className="no-res">Nothing Searched Yet</h3>
-        ) : (loader ? (<Card data={data} synonyms={synonyms}/>): <Loader/>)}
+          <div className="no-res-wrapper">
+            <h3 className="no-res">Nothing to Show</h3>
+            <img src="static/speechless-cartoon.png" className="no-res-img"/>
+          </div>
+        ) : <Card data={data} synonyms={synonyms} /> }
       </div>
     </div>
   );
